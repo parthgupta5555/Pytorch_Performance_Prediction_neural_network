@@ -1,28 +1,26 @@
 # Employee Performance Prediction using PyTorch
 
-## Overview
+A deep learning regression project built using **PyTorch** to predict employee performance scores from four numerical input features.
 
-This project demonstrates the complete deep learning workflow for a regression problem using PyTorch.
-
-A custom feed-forward neural network is trained to predict employee performance scores from four numerical features.
-
-The project focuses on understanding every stage of building a neural network, including data preprocessing, tensor operations, model creation, training, evaluation, and GPU acceleration using CUDA.
+This project demonstrates the complete workflow of building a neural network, including data preprocessing, model development, training, evaluation, and GPU acceleration using CUDA.
 
 ---
 
 ## Features
 
-- Synthetic dataset (10,000 samples)
+- Synthetic dataset with 10,000 samples
 - Data preprocessing using StandardScaler
-- Custom neural network using PyTorch
-- Regression using MSE Loss
-- Adam Optimizer
-- CPU and GPU (CUDA) training
+- Train-test split
+- Custom neural network using `nn.Module`
+- ReLU activation functions
+- Adam optimizer
+- Mean Squared Error (MSE) loss
 - Evaluation using RMSE and R² Score
+- CPU and GPU (CUDA) training support
 
 ---
 
-## Technologies
+## Tech Stack
 
 - Python
 - PyTorch
@@ -32,28 +30,37 @@ The project focuses on understanding every stage of building a neural network, i
 
 ---
 
-## Learning Outcomes
+## Project Workflow
 
-Through this project I learned:
+1. Generate a synthetic dataset
+2. Split data into training and testing sets
+3. Standardize input features
+4. Convert data into PyTorch tensors
+5. Build a custom neural network
+6. Train the model using Adam optimizer
+7. Evaluate performance using RMSE and R² Score
+8. Train and compare execution on CPU and GPU
 
-- Tensor operations
-- Building custom models with `nn.Module`
-- Forward and backward propagation
-- Gradient descent using Adam
-- GPU training using CUDA
-- Regression model evaluation
+---
+
+## Results
+
+The trained model is evaluated using:
+
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+---
+
+## Dataset
+
+This project uses a **synthetic dataset** created solely for learning and educational purposes.
 
 ---
 
 ## Future Improvements
 
-- Train using mini-batches with DataLoader
-- Experiment with deeper architectures
-- Train on a real-world dataset
-- Hyperparameter tuning
-
----
-
-## Author
-
-Parth Gupta
+- Implement mini-batch training using `DataLoader`
+- Experiment with deeper neural network architectures
+- Train on real-world datasets
+- Perform hyperparameter tuning
