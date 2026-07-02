@@ -52,6 +52,14 @@ The trained model is evaluated using:
 
 ---
 
+## Results
+
+The model was evaluated on both CPU and GPU after training.
+
+![CPU vs GPU Results](model_results.png)
+
+---
+
 ## Dataset
 
 This project uses a **synthetic dataset** created solely for learning and educational purposes.
